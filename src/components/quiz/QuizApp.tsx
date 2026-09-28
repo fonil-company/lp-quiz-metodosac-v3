@@ -165,7 +165,7 @@ export default function QuizApp() {
     >
       {/* Card container — borda e sombra só no desktop */}
       <div
-        className="quiz-card w-full lg:max-w-2xl flex flex-col flex-1 lg:flex-none lg:rounded-2xl overflow-hidden"
+        className={`quiz-card w-full ${state.currentStep === 0 ? 'lg:max-w-[1150px] lg:rounded-[28px]' : 'lg:max-w-2xl lg:rounded-2xl'} flex flex-col flex-1 lg:flex-none overflow-hidden`}
         style={{ backgroundColor: 'var(--color-surface)' }}
       >
         {/* Header — steps 1-10 */}
